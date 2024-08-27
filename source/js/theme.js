@@ -1,7 +1,7 @@
 (function($) {
-'use strict';
+"use strict";
     
-    $('body').scrollspy({ target: '#navbarmain' });
+    $("body").scrollspy({ target: "#navbarmain" });
 
  /*
      * ----------------------------------------------------------------------------------------
@@ -9,10 +9,10 @@
      * ----------------------------------------------------------------------------------------
      */
 
-    $('a.smoth-scroll').on('click', function (e) {
+    $("a.smoth-scroll").on("click", function (e) {
         var anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top - 100
+        $("html, body").stop().animate({
+            scrollTop: $(anchor.attr("href")).offset().top - 100
         }, 1000);
         e.preventDefault();
     });
@@ -21,7 +21,7 @@
    
     
 
-  $('.testimonial-wrap').slick({
+  $(".testimonial-wrap").slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     infinite: true,
@@ -66,9 +66,9 @@
 
 
 
-  $('.book-preview').each(function () {
-        $(this).find('.popup-gallery').magnificPopup({
-            type: 'image',
+  $(".book-preview").each(function () {
+        $(this).find(".popup-gallery").magnificPopup({
+            type: "image",
             gallery: {
                 enabled: true
             }
@@ -78,11 +78,11 @@
     
   // SCROLL TO TOP
   
-  $(window).on('scroll', function () {
+  $(window).on("scroll", function () {
     if ($(window).scrollTop() > 70) {
-        $('.scroll-to-top').addClass('reveal');
+        $(".scroll-to-top").addClass("reveal");
     } else {
-        $('.scroll-to-top').removeClass('reveal');
+        $(".scroll-to-top").removeClass("reveal");
     }
 });
  
@@ -92,11 +92,11 @@
     /* ----------------------------------------------------------- */
 
 
-    $(window).on('scroll', function () {
+    $(window).on("scroll", function () {
         if ($(window).scrollTop() > 70) {
-            $('.site-header').addClass('header-white');
+            $(".site-header").addClass("header-white");
         } else {
-            $('.site-header').removeClass('header-white');
+            $(".site-header").removeClass("header-white");
         }
 
     });
@@ -108,8 +108,8 @@
     
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.smoth-scroll').on('click', function(event) {
-    $('.navbar-collapse').collapse('hide');
+  $(".smoth-scroll").on("click", function(event) {
+    $(".navbar-collapse").collapse("hide");
   });
 
 
